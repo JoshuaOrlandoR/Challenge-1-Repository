@@ -133,7 +133,7 @@ p {
     font-size: 36px;
 }
 
-/* Code in the css that is currently on lines 82-136 were previously located after the benefits section of code (line 139)
+/* Code in the css that is currently on lines 82-136 waspreviously located after the benefits section of code (line 139)
 They appear before benefits in the html, therefore their position in the css has been changed accordingly */
 
 .benefits {
@@ -147,6 +147,12 @@ They appear before benefits in the html, therefore their position in the css has
     background-color: #2589bd;
 }
 
+
+.benefit-lbc {
+    margin-bottom: 32px;
+    color: #ffffff;    
+}
+/* Can consolodate the code below with the code above with class benefit-lbc above
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -161,6 +167,14 @@ They appear before benefits in the html, therefore their position in the css has
     margin-bottom: 32px;
     color: #ffffff;
 }
+*/
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;   
+}
+
+/* Can consolodate the code below with the h3 { code above
 
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -177,23 +191,35 @@ They appear before benefits in the html, therefore their position in the css has
     text-align: center;
 }
 
-.benefit-lead img {
+*/
+
+.benefitimg {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;    
+}
+
+
+
+/* Can consolodate the code below by adding the .benefitimg class to the images in the html
+.benefit-lbc img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
+.benefit-lbc img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-cost img {
+.benefit-lbc img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+*/
 
 .footer {
     padding: 30px;
