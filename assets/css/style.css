@@ -133,7 +133,7 @@ p {
     font-size: 36px;
 }
 
-/* Code in the css that is currently on lines 82-136 waspreviously located after the benefits section of code (line 139)
+/* Code in the css that is currently on lines 82-134 was previously located after the benefits section of code (line 139)
 They appear before benefits in the html, therefore their position in the css has been changed accordingly */
 
 .benefits {
