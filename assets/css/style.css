@@ -30,11 +30,15 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+
 }
+
+/* Can remove this section, does not affect webpage
 
 .header div ul {
     list-style-type: none;
 }
+*/
 
 .header div ul li {
     display: inline-block;
@@ -50,13 +54,14 @@ p {
     font-size: 16px;
 }
 
-.hero {
+#hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    /* Changed from class selector to id as it only appears once in the code*/
 }
 
 .float-left {
@@ -73,65 +78,6 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 .search-engine-optimization {
@@ -188,6 +134,94 @@ p {
     font-size: 36px;
 }
 
+/* Code in the css that is currently on lines 82-134 was previously located after the benefits section of code (line 139)
+They appear before benefits in the html, therefore their position in the css has been changed accordingly */
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+
+.benefit-lbc {
+    margin-bottom: 32px;
+    color: #ffffff;    
+}
+/* Can consolodate the code below with the code above with class benefit-lbc above
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+*/
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;   
+}
+
+/* Can consolodate the code below with the h3 { code above
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+*/
+
+.benefitimg {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;    
+}
+
+
+
+/* Can consolodate the code below by adding the .benefitimg class to the images in the html
+.benefit-lbc img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-lbc img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-lbc img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+*/
+
 .footer {
     padding: 30px;
     clear: both;
@@ -198,3 +232,8 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+/* NOTE 
+- there are many instances in the code of class selectors being used where id selectors could be used instead
+- I have decided to not change all of them in the event that the figurative client wishes to add more to the webpage, using those class selectors
+- some examples are class=content or class=benefits, these only appear once in the html*/ 
