@@ -12,7 +12,7 @@ First weekly challenge for grading
  ## Installation
  
  No installation needed, simply open the index file in your browser of choice, or go to the website being hosted by github! 
- The link is the following *add when site is hosted*
+ The link is the following [Hosted Site](https://joshuaorlandor.github.io/Challenge-1-Repository/)
  
  ##Credits 
  
